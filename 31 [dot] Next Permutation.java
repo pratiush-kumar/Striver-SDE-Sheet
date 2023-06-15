@@ -7,6 +7,7 @@ class Solution {
             start++;
             end--;
         }
+        return;
     }
     public void nextPermutation(int[] nums) {
         int breakpoint = -1;
@@ -17,7 +18,7 @@ class Solution {
             }
         }
         if(breakpoint == -1){
-            reverseArray(nums, 0, nums.length-1);
+            reverseArray(nums,0, nums.length-1);
             return;
         }
         for(int i=nums.length-1; i>breakpoint; i--){
